@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Experiment Site </title>
+        <link rel="icon" href="favicon.ico" />
+
+        <script>
+            window.addEventListener('load', function(){
+                const canvas = document.querySelector("canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.strokeStyle = 'blue';
+                ctx.strokeRect(10,10,150,50)
+            })
+        </script>
+
+        <style>
+            p {
+                color: rgb(98, 179, 185);
+            }
+        </style>
+
+    </head>
+    <body>
+        <header> 
+            <h1> Experiment Site for HTML tags </h1>
+            <hr />
+            <nav class="labels">
+                
+            </nav>
+        </header>
+        <main>
+            <pre>
+                <i>sssss</i>
+                    <b>asdasas</b>asda<br/>sds
+                            <strong>sasda</strong>
+                        asdasdas<em>dsa</em>
+                        No! <mark>Meaningless!</mark>
+            </pre>
+            <hr />
+            <iframe src="./contact.html" frameborder="0"></iframe>
+
+
+
+            <datalist id="datalist_exp">
+                <option value="chocie1">
+            </datalist>
+
+            <p> <span id="Debug_statement">it works </span>></p>
+            <template id="non_js_template">
+                <tr>
+                    <td></td>
+                </tr>
+            </template>
+
+            <textarea>
+                Exp textarea
+            </textarea>
+
+            <p> 
+                <strong>
+                    <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    SVG
+                </strong> 
+            </p>
+
+            <canvas width="400" height="400">
+                Alternative text
+            </canvas>
+
+            <audio controls src="/t-rex-roar.mp3"/>
+            <video controls width="100">
+                <source src="/flower.webm" type="video/webm"/>
+            </video>
+
+        </main>
+    </body>
+</html>

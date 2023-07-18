@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> portfolio </title>
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <header> 
+            <h1> Portfolio </h1>
+            <hr />
+            <nav class="labels">
+                <ol>
+                    <li class="label"><a href="./index.html">About Me</a></li>
+                    <li class="label"><a href="./project.html">Project</a></li>
+                    <li class="label"><a href="./class.html">Curriculum</a></li>
+                    <li class="label"><a href="./contact.html">Contact</a></li>
+                </ol>
+            </nav>
+            <hr />
+        </header>
+        <main>
+            <div name="demo_project">
+                <h2> Demo Project </h2>
+                <select name="demo_project_selction">
+                    <optgroup label="Game">
+                        <option value="Snake">Snake</option>
+                    </optgroup>
+                    <optgroup label="Map">
+                        <option value="Map"> DEMO1 </option>
+                    </optgroup>                    
+                </select>
+
+                <aside>
+                    <p>The key function here is <code> move() </code>. It determines the state of game. </p>
+                </aside>
+
+                <form action="" method="GET">
+                    <label for="advice">Please share any advice to help me improve it. Thanks! </label>
+                    <br/>
+                    <input type="text" id="advice" />
+                    <fieldset>
+                        <legend> please rate this game </legend> 
+                        <input type="radio" id="good" value="good">
+                        <label for="good"> Good </label> <br/>
+                        <input type="radio" id="bad" value="bad">
+                        <label for="bad"> Bad </label> <br/>
+                    </fieldset>
+                    <button type="submit" value="Submit"> Submit </button>
+                </form>
+
+                <hr />
+            </div>
+
+            <section name="other_project">
+                <h2> Other project</h2>
+                <ul>
+                    <li> NoteBook </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <time datetime="2023-7-17"> 07/17/2023 </time>
+        </footer>
+    </body>
+</html>
