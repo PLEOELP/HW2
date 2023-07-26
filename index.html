@@ -2,61 +2,84 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title> portfolio </title>
         <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="index_style.css" media="all" type="text/css" />
     </head>
     <body>
         <header> 
             <h1> Portfolio </h1>
-            <hr />
             <nav class="labels">
-                <ol>
+                <ul>
                     <li class="label"><a href="./index.html">About Me</a></li>
                     <li class="label"><a href="./project.html">Project</a></li>
                     <li class="label"><a href="./class.html">Curriculum</a></li>
                     <li class="label"><a href="./contact.html">Contact</a></li>
-                    <li class="label"><a href="./experiment.html"> Experiment Site for HTML Tag</a></li>
-                </ol>
+                </ul>
             </nav>
-            <hr />
         </header>
-        <main>
-            <picture>
-                <source srcset="favicon-16x16.png" media="(min-width: 600px)" />
-                <img src="favicon-32x32.png" alt="Portrait"/>
-            </picture>
-            <hr />
-            
-            <section>
-                <h2>
+        <main> 
+            <section id="Summary_section">
+                <h2 hidden>
                     Summary
                 </h2>
+                <picture>
+                    <source srcset="Img/Portrait_300.jpg" width="300px" media="(min-width: 400px)">
+                    <img src="Img/Portrait_150.jpg" width="150px" alt="My Portrait"/>
+                </picture>
                 <p>
-                    Content of Summary
+                    I'm Leo.
+
                 </p>
             </section>
-            <hr />
 
-            <section>
+            <section id="Skills_section">
+                <h2>
+                    Skills
+                </h2>
+                <h3> Programming Language </h3>
+                <ul>
+                    <li>JS, HTML, CSS</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Cuda</li>
+                    <li>Python</li>
+                </ul>
+                <h3> Math Knowledge </h3>
+                <ul>
+                    <li> Statistics </li>
+                    <li> Discreet Math </li>
+                    <li> Numerical Analysis </li>
+                </ul>
+            </section>
+
+            <section id="Hobbies_section">
                 <h2>
                     Hobbies
                 </h2>
                 <h3>
-                    DND
+                    Fantasy
                 </h3>
                 <p>
-                    Content of Hobbies
+                    I'm big fan of fantasy literature. 
+                    <i>A Song of Ice and Fire</i> used to be my favorite, but it is too tired to wait for the volume 6. 
+                    Can't believe that Martin is still working on it even today is about 10 years after the publication of volume 5.
+                    <br>
+                    I also like <i>Mistborn</i> series much. It depicts a more magical world (In contrast, magic is much less prevail in <i>A Song of Ice and Fire</i>). 
+                    I really love that. Besides, Sanderson writes much quicker. Don't have to wait for 10 years for a new volume.
                 </p>
-            </section>
-            <hr />
+                <h3>
+                    <i>DnD</i>
+                </h3>
+                <p>
+                    <i>Dungeons & Dragons</i> is of my interest. I particularly like the fantasy world setting it provides. Sadly it is rare to have opportunity to play it as table game. 
+                    Instead, I play video game based on <i>DnD</i> rules or world setting. Unluckily, despite I claim so, it has been a long time since the realse of the <i>Neverwinter Nights 2</i> (2006), which is the last such video game I know.
+                    I am waiting for the <a href="https://baldursgate3.game/">Baldur's Gate 3 </a>now. I believe it will be the greatest game this year.
+                </p>
+            </section>            
 
-            <section>
-                <h2>
-                    Personalities
-                </h2>
-
-            </section>
-            <hr />
         </main>
         <footer>
             <time datetime="2023-07-17"> July 17 </time>

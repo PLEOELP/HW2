@@ -1,0 +1,163 @@
+/* Standard Style Apply to all Page */
+:root {
+    --custom-font: "Prestige Signature Serif";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(132, 160, 208);
+}
+
+body>header {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+
+    border-block-end: solid;
+}
+
+body>header>h1{
+    align-self: start;
+
+    transform: rotate(350deg);
+    font-family: var(--custom-font);
+    font-size: 100px;
+}
+
+@media screen and (max-width: 900px){
+    body>header {
+        height: 200px;
+    }
+
+    body>header>h1{
+        align-self: center;
+
+        transform: rotate(0deg);
+        font-family: var(--custom-font);
+        font-size: 60px;
+    }
+}
+
+.labels {
+    align-self: end;
+}
+
+.label {
+    display: inline-block;
+    padding-inline: 10px;
+    font-size: min(16px, 3vw);
+    transition: font-size 4s;
+}
+
+@media screen and (max-width: 600px){
+    .labels {
+        align-self: center;
+    }
+
+    .label {
+        padding-inline: 3px;
+    }    
+}
+
+.label:hover {
+    font-size: larger;
+}
+
+body>footer {
+    align-self: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@font-face {
+    font-family: "Prestige Signature Serif";
+    src: url("Font/PrestigeSignatureSerifDemo-PYlB.ttf"), local("Georgia");
+    font-display: fallback;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* unique style to index.html */
+
+body>main {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "Summary_section Detail_section_1 Detail_section_2";
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@media screen and (max-width: 900px){
+    body>main{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+#Summary_section{
+    grid-area: Summary_section;
+
+    display:flex;
+    flex-direction: column;
+
+    padding: max(1vw, 5px);
+
+    background-color: rgb(117, 209, 117);
+}
+
+#Summary_section>picture{
+    padding: max(1vw, 5px); 
+    max-width: 100%;
+}
+
+#Summary_section>p{
+    padding: max(1vw, 5px);
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+    #Summary_section{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #Summary_section{
+        flex-direction: column;
+    }
+
+    #Summary_section>picture{
+        align-self: center;
+    }
+}
+
+#Hobbies_section{
+    grid-area: Detail_section_2;
+    padding: max(1vw, 5px);
+
+    background-color: rgb(117, 209, 117);
+}
+
+#Skills_section {
+    grid-area: Detail_section_1;
+    padding: max(1vw, 5px);
+
+   
+    background-color: rgb(209, 120, 117);
+}
